@@ -1,0 +1,54 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+at-q6.21-school.ru
+Darwin 16.7.0 x86_64
+$> date
+Thu Dec 26 15:25:28 MSK 2019
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin16.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin16.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/c-exam-alone-in-the-dark-beginner/exam_20191226/fprovolo
+
+= Git history ==================================================================
+$> git -C /var/folders/yq/20fbpm3j7s3gb40kpbqp0d400000gq/T/tmp6_2mYq/user log --pretty='%H - %an, %ad : %s'
+e6f969a9e76dda0b251dfb3f8974b26bff2f3ea6 - Exam 42, Thu Dec 26 15:25:01 2019 +0300 : 02
+9a9c79c39b88a9e80c2b8c444924b0f431a41bc7 - Exam 42, Thu Dec 26 13:41:25 2019 +0300 : 1
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/yq/20fbpm3j7s3gb40kpbqp0d400000gq/T/tmp6_2mYq/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  539 Dec 26 15:25 __GIT_HISTORY
+drwxr-xr-x  4 deepthought  deepthought  136 Dec 26 15:25 biggest_pal
+drwxr-xr-x  3 deepthought  deepthought  102 Dec 26 15:25 print_memory
+
+/var/folders/yq/20fbpm3j7s3gb40kpbqp0d400000gq/T/tmp6_2mYq/user/biggest_pal:
+total 16
+-rw-r--r--  1 deepthought  deepthought  1552 Dec 26 15:25 biggest_pal.c
+-rw-r--r--  1 deepthought  deepthought   912 Dec 26 15:25 biggest_pal.h
+
+/var/folders/yq/20fbpm3j7s3gb40kpbqp0d400000gq/T/tmp6_2mYq/user/print_memory:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1791 Dec 26 15:25 print_memory.c
+ 
+= print_memory =================================================================
+$> gcc -Wextra -Wall -Werror print_memory.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./bzgj0son4rgm6ssyohm3u23e
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================
